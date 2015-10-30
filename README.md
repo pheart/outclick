@@ -1,2 +1,2 @@
 # outclick
-element outside click event
+simply util for element outside click event

@@ -1,0 +1,28 @@
+{
+  "name": "outclick",
+  "version": "1.0.0",
+  "description": "element outside click event",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install",
+
+    "prestart": "npm install",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pheart/outclick.git"
+  },
+  "keywords": [
+    "outside",
+    "click"
+  ],
+  "author": "pheart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pheart/outclick/issues"
+  },
+  "homepage": "https://github.com/pheart/outclick#readme",
+  "devDependencies": {
+    "bower": "^1.6.5"
+  }
+}

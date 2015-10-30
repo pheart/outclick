@@ -1,0 +1,21 @@
+{
+  "name": "outclick requirements",
+  "homepage": "https://github.com/pheart/outclick",
+  "authors": [
+    "pheart <694413162@qq.com>"
+  ],
+  "description": "a starter project",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test outclick</title>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../src/outclick.js"></script>
+<style>
+.mt20 { margin-top: 20px; }
+.in { display: inline-block; }
+.ml20 { margin-left: 20px;}
+.box1 {
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+}
+.box2 {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+.box3 {
+    background-color: #39c;
+    height: 200px;
+}
+</style>
+</head>
+<body>
+<h3>方框一外点击 测试</h3>
+<div id="test1" class="box1">方框一</div>
+
+<script>
+    var outclick = OutClick();
+    outclick.add({
+        el: $('#test1'), 
+        callback: function() {
+            alert('方框一外点击');
+        }
+    });
+</script>
+    
+</body>
+</html>

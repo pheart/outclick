@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test outclick</title>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="../src/outclick.js"></script>
+<style>
+.mt20 { margin-top: 20px; }
+.in { display: inline-block; }
+.ml20 { margin-left: 20px;}
+.box1 {
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+}
+.box2 {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+.box3 {
+    background-color: #39c;
+    height: 200px;
+}
+</style>
+</head>
+<body>
+<h3>方框二外点击 filter属性 (过滤 方框三、方框四) 测试</h3>
+<div id="test2" class="box2 mt20">方框二父元素
+    <div id="test3" class="box1">方框二</div>
+</div>
+
+<div id="test4" class="box3 mt20">方框三父元素
+    <div id="test5" class="box1 in">方框三</div>
+    <div id="test6" class="box1 in box-t ml20">
+        方框四
+        <span>sdfsdffff3</span>
+    </div>
+</div>
+
+<script>
+    var outclick = OutClick();
+
+    outclick.add({
+        el: $('#test3'),
+        filter: [
+            $('#test5'),
+            {className: 'box-t'}
+        ],
+        callback: function() {
+            alert('方框二外点击');
+        }
+    }); 
+</script>
+    
+</body>
+</html>
